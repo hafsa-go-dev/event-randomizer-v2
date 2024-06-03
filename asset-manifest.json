@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/event-randomizer-v2/static/css/main.edafd36b.css",
+    "main.js": "/event-randomizer-v2/static/js/main.81ba2ea4.js",
+    "index.html": "/event-randomizer-v2/index.html",
+    "main.edafd36b.css.map": "/event-randomizer-v2/static/css/main.edafd36b.css.map",
+    "main.81ba2ea4.js.map": "/event-randomizer-v2/static/js/main.81ba2ea4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edafd36b.css",
+    "static/js/main.81ba2ea4.js"
+  ]
+}
