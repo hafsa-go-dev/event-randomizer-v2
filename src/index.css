@@ -1,13 +1,191 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #86469C;
+  color: #FB9AD1;
+}
+
+.header {
+  width: 100%;
+  background-color: #BC7FCD;
+  color: #FFCDEA;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomizer {
+  padding: 0rem 1rem;
+}
+
+.randomizer-button {
+  cursor: pointer;
+  background-color: #ffcdea;
+  color: #86469c;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  border: none;
+}
+.options-button {
+  cursor: pointer;
+  background-color: #ffcdea;
+  color: #86469c;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+.options-screen {
+  width: 100%;
+  background-color: #ffcdea;
+  color: #86469c;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box {
+  background-color: #ffffff;
+  color: #86469c;
+  font-family: inherit;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-button {
+  cursor: pointer;
+  background-color: #86469c;
+  color: #ffcdea;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.remove-button {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ffcdea;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+.toggle-remove {
+  margin-top: 1rem;
+}
+.result-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #86469C;
+  color: #FB9AD1;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #FFCDEA;
+  font-weight: 200;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row: auto;
+  grid-gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #86469C;
+}
+
+.cell {
+  background-color: #FFCDEAFF;
+  color: #86469C;
+  height: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell.active {
+  background-color: #fb9ad1;
+  color: #86469C;
+  height: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #86469C;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #86469C;
+  }
 }
